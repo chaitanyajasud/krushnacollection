@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Signup</title>
+	<style>
+	.f{
+		padding:20px;
+	
+		box-padding:20px;
+		background-color:rgb(255, 0, 255);
+		margin-left:20%;
+		margin-right:30%;
+		padding-left:10%;
+		padding-right:10%;
+		margin-top:2%;
+		border:solid;
+	}
+	.b1{
+	height:25px;
+	width:90px;
+	margin-left:20px;
+	}
+	</style>
+	<script type="text/javascript">
+		function fun(){
+			
+			var a=document.getElementById("name").value;
+			var b=document.getElementById("lname").value;
+			a=parseInt(a);
+			b=parseInt(b);
+			document.write(a+b);
+		}
+	</script>
+</head>
+<body text="white">
+<form action="" onsubmit="return fun()" method="post">
+<div align="center" class="f">
+<h1 align="center">signup!</h1>
+	<b>name:</b>
+	<input type="text" name="name" id="name" placeHolder="enter your firstname">
+	<br>
+	<br>
+	<b>lastname:</b>
+	<input type="text" name="lname"  id="lname" placeHolder="enter your lastname">
+	<br>
+	<br>
+	<b>badate:</b>
+	<input type="date" name="bdate" placeHolder="yy:mm:dd">
+	<br>
+	<br>
+	<b>number:</b>
+	<input type="tel" name="number" placeHolder="mobno">
+	<br>
+	<br>
+	<b>adress:</b>
+	<textarea placeHolder="adress"></textarea>
+	<br>
+	<br>
+	<input type="submit" value="signup" onclick="fun();">
+	
+	<button value="cancel" class="b1" >cancel</button>
+	</div>
+	
+	
+	
+</form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+<script>
+	function validation(){
+		var name=document.formname.name.value;
+		alert(5 + 6);
+		console.log(5 + 6);
+		var lname=document.formname.lname.value;
+		document.write("the name is="+name+lname)
+		var x=document.getElementByid("em").innerElement="ff";
+		
+		document.write("gggg");
+	}
+	
+</script>
+</head>
+<body style="background-color:LightGray; margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 100px;
+  line-height: 100%;
+  margin: auto;
+  border: 3px solid #73AD21; ">
+<b style="text-align:center">login detail</b>
+    
+	<form  action="" method="post" onsubmit="return validation()" name="formname" >	
+		name:<input type="text" name="name"><br>
+		<br>
+		lname:<input type="text" name="lname"><br>
+		<br>
+		mobno:<input type="tel" name="mob"><br>
+		<br>
+		email:<input type="email" name="email" id="em"><br>
+		<br>
+		enter your valid adress:-<br>
+		<textarea width=5 ,heigth=5 value="adress"></textarea><br>
+		<input type="submit" value="register">
+
+
+	</form>
+	
+
+
+</body>
+</html>
